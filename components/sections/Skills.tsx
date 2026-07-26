@@ -1,0 +1,3 @@
+import SectionHeader from "@/components/ui/SectionHeader";
+import { skillGroups } from "@/data/skills";
+export default function Skills(){return <section className="section" id="skills"><div className="container"><SectionHeader eyebrow="Capabilities" title="A software-and-infrastructure toolkit." copy="The strongest part of my profile is the combination of enterprise operations, cloud infrastructure, delivery automation, and application development."/><div className="skills-grid">{skillGroups.map(g=><article className="card skill-card" key={g.title}><h3>{g.title}</h3><div className="tags">{g.skills.map(s=><span className="tag" key={s}>{s}</span>)}</div></article>)}</div></div></section>}

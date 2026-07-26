@@ -1,0 +1,3 @@
+import SectionHeader from "@/components/ui/SectionHeader";
+import { experience } from "@/data/experience";
+export default function Experience(){return <section className="section" id="experience"><div className="container"><SectionHeader eyebrow="Experience" title="Enterprise support, cloud administration, and automation." copy="My professional experience demonstrates that I can operate in business-critical environments, communicate with stakeholders, and improve technical processes."/><div className="timeline">{experience.map(i=><article className="card timeline-item" key={i.company}><div className="timeline-meta">{i.period}</div><h3>{i.role}</h3><h4>{i.company}</h4><ul>{i.highlights.map(h=><li key={h}>{h}</li>)}</ul></article>)}</div></div></section>}
