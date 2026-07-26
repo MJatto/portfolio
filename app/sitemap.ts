@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/data/projects";
 
-const baseUrl = "https://your-domain.vercel.app";
+const baseUrl = "portfolio-icwm0jatx-mohammed-3146.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
