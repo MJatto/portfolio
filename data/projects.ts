@@ -214,4 +214,55 @@ export const projects: readonly Project[] = [
         ],
       },
   },
+  {
+    slug: "portfolio",
+    title: "Personal Engineering Portfolio",
+    description:
+      "A modern engineering portfolio built with Next.js and TypeScript to showcase software development and DevOps projects, technical skills, professional experience, and GitHub repositories. The application is fully responsive, optimized for performance, and automatically deployed using Vercel.",
+  
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Git",
+      "GitHub",
+      "Vercel"
+    ],
+  
+    repository: "https://github.com/MJatto/portfolio",
+  
+    caseStudy: {
+      problem:
+        "This project was created to provide a centralized platform where recruiters and hiring managers can explore my software engineering and DevOps projects beyond what is possible on a traditional résumé. The portfolio showcases my technical skills, project experience, and professional background while serving as a continuously evolving representation of my work.",
+
+      solution:
+        "I designed the application using Next.js App Router with TypeScript and reusable React components. Project information is driven by structured data files, making it easy to add or update projects without changing the application's core structure. The site integrates GitHub repositories, downloadable résumé functionality, SEO optimization through robots.txt and sitemap generation, and automated deployments using Vercel.",
+  
+      architecture: [
+        "Next.js App Router for routing and application structure.",
+        "Reusable React components for navigation, project cards, and page layouts.",
+        "Structured TypeScript data files powering project and case study content.",
+        "Responsive design optimized for desktop, tablet, and mobile devices.",
+        "Continuous deployment pipeline using GitHub and Vercel."
+      ],
+  
+      challenges: [
+        "Built a fully responsive engineering portfolio using modern React development practices.",
+        "Implemented reusable components to improve scalability and maintainability.",
+        "Integrated GitHub repositories and downloadable résumé functionality.",
+        "Configured automatic deployments with Vercel connected to GitHub.",
+        "Implemented SEO improvements through sitemap and robots configuration.",
+        "Resolved Git branching, merge conflicts, and production deployment issues during development."
+      ],
+  
+      lessons: [
+        "Strengthened Git workflow skills by resolving merge conflicts and unrelated repository histories.",
+        "Gained practical experience deploying production applications with Vercel.",
+        "Improved understanding of responsive UI design using Next.js and Tailwind CSS.",
+        "Learned how to troubleshoot deployment, routing, and production configuration issues.",
+        "Designed a scalable project structure that can easily accommodate future portfolio projects."
+      ],
+      }
+  }
 ] as const;
